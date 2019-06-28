@@ -4,6 +4,6 @@ class Car
   def initialize(make:, model:, color:)
     @make = make
     @model = model
-    @color = color    
+    @color = color
   end
 end
