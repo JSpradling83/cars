@@ -8,6 +8,15 @@ class Person
     @dob = dob
   end
 
+  def age
+    # 1. get the current date
+    today = Date.today
+    # 2. get the difference of current date, and dob
+    difference = today - dob
+    # 3. get the difference divided by 365, round down
+    (difference / 365.0).floor
+  end
+
   def dob
     # 1. Split dob into parts
     parts = @dob.split("-")
